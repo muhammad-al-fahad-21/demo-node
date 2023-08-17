@@ -5,7 +5,7 @@ require('dotenv').config()
 
 const app = express()
 
-mongoose.connect(process.env.DB).then(() => console.log(`connected to ${process.env.DB}...`)).catch((err) => console.error('not connected to database \n', err))
+mongoose.connect(process.env.DB).then(() => console.log('connected to mongodb...')).catch((err) => console.error('not connected to database \n', err))
 
 app.use(express.json());
 
