@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "start": "set NODE_ENV=development && node ./index.js",
     "test": "set NODE_ENV=test && jest --watchAll --verbose --detectOpenHandles --forceExit ./tests",
