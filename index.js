@@ -1,19 +1,18 @@
 const express = require('express')
 const genres = require('./route/genre')
 const mongoose = require('mongoose')
-const config = require('config')
+require('dotenv').config()
 
 const app = express()
-const db = config.get('db')
 
-mongoose.connect(db).then(() => console.log(`connected to ${db}...`)).catch((err) => console.error('not connected to database \n', err))
+mongoose.connect(process.env.DB).then(() => console.log(`connected to ${process.env.DB}...`)).catch((err) => console.error('not connected to database \n', err))
 
 app.use(express.json());
 
 app.use('/genre', genres)
 
-const server = app.listen(config.get("port"), () => {
-  console.log(`Server Running On Port ${config.get("port")}`)
+const server = app.listen(process.env.PORT, () => {
+  console.log(`Server Running On Port ${process.env.PORT}`)
 })
 
 module.exports = server
