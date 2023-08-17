@@ -1,0 +1,6 @@
+{
+    "NODE_ENV": "development",
+    "PORT": 9001,
+    "DB": "mongodb+srv://MuhammadAlFahad:Software12&@cluster0.ntkkkzh.mongodb.net/development",
+    "JWT_SECRET": "vidly_dev_key"
+}

@@ -1,0 +1,6 @@
+{
+    "NODE_ENV": "test",
+    "PORT": 9001,
+    "DB": "mongodb+srv://MuhammadAlFahad:Software12&@cluster0.ntkkkzh.mongodb.net/test",
+    "JWT_SECRET": "vidly_test_key"
+}
