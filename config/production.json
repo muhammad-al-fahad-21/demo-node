@@ -1,6 +1,6 @@
 {
     "NODE_ENV": "production",
-    "PORT": 9001,
+    "PORT": 9002,
     "DB": "mongodb+srv://MuhammadAlFahad:Software12&@cluster0.ntkkkzh.mongodb.net/production",
     "JWT_SECRET": "vidly_prod_key"
 }
