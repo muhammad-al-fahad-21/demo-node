@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
-    "start": "node ./index.js",
-    "test": "jest --watchAll --verbose --coverage --detectOpenHandles --forceExit./tests"
+    "start": "NODE_ENV=development nodemon ./index.js",
+    "test": "NODE_ENV=test jest --watchAll --verbose --coverage --detectOpenHandles --forceExit./tests",
+    "build": "NODE_ENV=production node ./index.js"
   },
   "author": "Muhammad Al Fahad",
   "license": "ISC",
