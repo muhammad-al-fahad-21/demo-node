@@ -1,5 +1,5 @@
 const express = require('express')
-const genres = require('./route/genre')
+const genres = require('./routes/genre')
 const mongoose = require('mongoose')
 require('dotenv').config()
 
@@ -10,11 +10,6 @@ mongoose.connect(process.env.DB).then(() => console.log(`connected to ${process.
 app.use(express.json());
 
 app.use('/genre', genres)
-app.get('/', (req, res) => {
-  res.json({
-    message: "work successfully"
-  })
-})
 
 const server = app.listen(process.env.PORT, () => {
   console.log(`Server Running On Port ${process.env.PORT}`)
