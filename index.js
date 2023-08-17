@@ -17,4 +17,6 @@ const server = app.listen(port, () => {
   console.log(`Server Running On Port ${port}`)
 })
 
+server.close();
+
 module.exports = server
