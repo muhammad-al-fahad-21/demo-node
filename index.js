@@ -12,8 +12,8 @@ app.use(express.json());
 
 app.use('/genre', genres)
 
-const server = app.listen(5001, () => {
-  console.log('Server Running On Port 5001')
+const server = app.listen(config.get("port"), () => {
+  console.log(`Server Running On Port ${config.get("port")}`)
 })
 
 module.exports = server
