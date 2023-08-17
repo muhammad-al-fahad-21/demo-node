@@ -7,9 +7,9 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development node ./index.js",
-    "test": "cross-env NODE_ENV=test jest --watchAll --verbose --detectOpenHandles --forceExit ./tests",
-    "build": "cross-env NODE_ENV=production node ./index.js"
+    "start": "set NODE_ENV=development && node ./index.js",
+    "test": "set NODE_ENV=test && jest --watchAll --verbose --detectOpenHandles --forceExit ./tests",
+    "build": "set NODE_ENV=production && node ./index.js"
   },
   "author": "Muhammad Al Fahad",
   "license": "ISC",
